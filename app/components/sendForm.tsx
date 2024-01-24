@@ -73,7 +73,7 @@ const SendForm: React.FC = () => {
     } else {
       Swal.fire({
         icon: "warning",
-        title: "Woah There! You need to add write something first.",
+        title: "Woah There! You need to write something first.",
       });
     }
   };

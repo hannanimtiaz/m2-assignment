@@ -33,4 +33,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 Or you can also check out the [deployment](https://m2-assignment.vercel.app) on
 
-If you like my work you could check out my [portfolio] (https://hannanimtiaz.com) as well
+If you like my work you could check out my [portfolio](https://hannanimtiaz.com) as well
