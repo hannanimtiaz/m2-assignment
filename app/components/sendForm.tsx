@@ -1,4 +1,5 @@
 "use client";
+import Swal from "sweetalert2";
 import React, { useState } from "react";
 import {
   Box,
@@ -10,9 +11,9 @@ import {
   Unstable_Grid2 as Grid,
   CardActions,
 } from "@mui/material";
-import Swal from "sweetalert2";
 
 const initialData = { receiver: "", amount: "", edited: false };
+
 const SendForm: React.FC = () => {
   const [data, setData] = useState(initialData);
   const [errors, setErrors] = useState<{
@@ -39,7 +40,6 @@ const SendForm: React.FC = () => {
     setErrors({ ...errors, [name]: error });
     setData({ ...data, [name]: value, edited: true });
   };
-  // return error ? error.details[0].message : null;
 
   const submit = (e: any) => {
     e.preventDefault();

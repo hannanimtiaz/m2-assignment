@@ -1,5 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import { Tranaction } from "../common/types";
+import { ArrowUpward, ArrowDownward } from "@mui/icons-material";
 import {
   Table,
   TableBody,
@@ -8,9 +10,6 @@ import {
   TableHead,
   TableRow,
 } from "@mui/material";
-
-import { Tranaction } from "../interfaces/tranaction";
-import { ArrowUpward, ArrowDownward } from "@mui/icons-material";
 
 interface TransactionTableProps {
   transactions: Array<Tranaction>;

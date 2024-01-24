@@ -1,6 +1,6 @@
 "use client";
-import React, { useState } from "react";
 import Link from "next/link";
+import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import {
   Drawer,
@@ -21,6 +21,7 @@ const list = [
 export default function ButtonAppBar() {
   const [open, setOpen] = useState<boolean>(false);
   const isMobile = useMediaQuery("(max-width:899px)");
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -41,6 +42,7 @@ export default function ButtonAppBar() {
               <MenuIcon />
             </IconButton>
           )}
+
           {isMobile && (
             <Drawer
               className="p-3"

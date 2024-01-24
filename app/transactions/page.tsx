@@ -1,8 +1,8 @@
 import React from "react";
-import { Box, Card, CardContent, Container, Typography } from "@mui/material";
+import { Tranaction } from "../common/types";
 import { Unstable_Grid2 as Grid } from "@mui/material";
 import TransactionTable from "../components/transactionTable";
-import { Tranaction } from "../interfaces/tranaction";
+import { Box, Card, CardContent, Container, Typography } from "@mui/material";
 
 export default function Transactions() {
   const transactions: Tranaction[] = [

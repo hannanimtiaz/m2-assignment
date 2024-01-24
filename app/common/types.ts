@@ -5,4 +5,9 @@ export interface Tranaction {
   amount: number;
   type: string;
 }
-[];
+export interface User {
+  name: string;
+  coins: number;
+  avatar: string;
+  walletAddress: string;
+}

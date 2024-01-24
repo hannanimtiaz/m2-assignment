@@ -1,6 +1,9 @@
 "use client";
-import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import { User } from "../common/types";
+import { useRouter } from "next/navigation";
+import { Upload, List } from "@mui/icons-material";
+import React, { useEffect, useState } from "react";
 import {
   Box,
   Card,
@@ -9,9 +12,6 @@ import {
   Button,
   Unstable_Grid2 as Grid,
 } from "@mui/material";
-import { Upload, List } from "@mui/icons-material";
-import { User } from "../interfaces/user";
-import { useRouter } from "next/navigation";
 
 interface WalletProps {
   user: User;

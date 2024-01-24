@@ -1,10 +1,10 @@
-import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
+import "./globals.scss";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.css";
-import "./globals.scss";
-import BootstrapClient from "./components/BoostrapClient";
 import ButtonAppBar from "./components/Navbar";
+import BootstrapClient from "./components/BoostrapClient";
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
 
 const inter = Inter({ subsets: ["latin"] });
 
