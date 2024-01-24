@@ -12,7 +12,12 @@ import {
   CardActions,
 } from "@mui/material";
 
-const initialData = { receiver: "", amount: "", edited: false };
+const initialData = {
+  receiver: "",
+  amount: "",
+  amountEdited: false,
+  receiverEdited: false,
+};
 
 const SendForm: React.FC = () => {
   const [data, setData] = useState(initialData);
@@ -38,12 +43,12 @@ const SendForm: React.FC = () => {
   const handleChange = ({ name, value }: { name: string; value: string }) => {
     let error = checkValidity({ name, value });
     setErrors({ ...errors, [name]: error });
-    setData({ ...data, [name]: value, edited: true });
+    setData({ ...data, [name]: value, [`${name}Edited`]: true });
   };
 
   const submit = (e: any) => {
     e.preventDefault();
-    if (data.edited) {
+    if (data.amountEdited && data.receiverEdited) {
       var check = Object.values(errors).every(function (value) {
         return value == false;
       });
